@@ -1,0 +1,24 @@
+[project]
+name = "learncam"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Daniel",email = "daniel04lope@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pyqt6 (>=6.8.1,<7.0.0)",
+    "pyqt5-tools (>=5.15.9.3.3,<6.0.0.0.0)",
+    "setuptools (>=77.0.3,<78.0.0)",
+]
+
+[tool.poetry]
+packages = [{include = "learncam", from = "src"}]
+
+
+[tool.poetry.dependencies]
+pyqt6 = {source = "pypi"}
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
